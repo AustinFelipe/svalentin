@@ -1,0 +1,45 @@
+﻿body {
+}
+
+.container-topo {
+    background-color: #fff;
+}
+
+.container-topo ul {
+    padding-right: 20px;
+}
+
+.nav-topo{
+    margin-top: 25px !important;
+    color: #421400;
+    background-color: #fff;
+    min-height: 70px;
+    width: 102%;
+    border-radius: 0px;
+}
+
+.cover-top-img{
+    max-height: 500px;
+    max-width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.img-principal{
+    margin-top: -150px;
+    z-index: -10;
+}
+
+.menu-caption{
+    text-align:center;
+    margin-top: 50px;
+    line-height: 10px;
+}
+
+.divider {
+    background-color: #FFF;
+    height: 2px;
+    width: 80px;
+    margin: 29px auto;
+    border-bottom: 3px double;
+}
