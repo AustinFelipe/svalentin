@@ -28,6 +28,7 @@
 .img-principal{
     margin-top: -150px;
     z-index: -10;
+
 }
 
 .menu-caption{
@@ -39,7 +40,11 @@
 .divider {
     background-color: #FFF;
     height: 2px;
-    width: 80px;
+    width: 180px;
     margin: 29px auto;
     border-bottom: 3px double;
+}
+
+.thumbnail-title {
+    text-align: center;
 }
