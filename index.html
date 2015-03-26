@@ -1,126 +1,165 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css" />
-    <link rel="stylesheet" type="text/css" href="/css/sanvalentino.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanvalentino.css" />
     <title></title>
 </head>
 <body>
-    <div class="container container-topo">
-        <nav class="nav navbar nav-topo">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">San Valentin</a>
-                </div>
-                <div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Philosophy</a></li>
-                        <li><a href="#">Cake</a></li>
-                        <li><a href="#">Bread</a></li>
-                        <li><a href="">Dishes</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="container cover-top-img">
-        <img class="img-principal" src="/img/img_principal.jpg" alt="" />
-    </div>
-    <div class="container">
-        <div class="container">
-            <h2 class=" menu-caption">MENU</h2>
-            <div class="divider"></div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="/img/cake.png" alt="" />
-                    <h4 class="thumbnail-title">Cake</h4>
-                    <p>For those with a sweet tooth, San valentin has everything to satisfy your...</p>
-                </div>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="container container-spaced">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="/">
+                    <img src="img/logo.png" alt="San Valentino">
+                </a>
             </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="/img/Semifreddo.png" alt="" />
-                    <h4 class="thumbnail-title">Semifreddo</h4>
-                    <p>Drop in and try our mouth watering ricotta cheese-cake, semifreddo, cannoli</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="/img/Gelatto.png" alt="" />
-                    <h4 class="thumbnail-title">Gelato</h4>
-                    <p>To cleanse your palette, try our range of delicious gelatto - on taste will</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="/img/Bread.png" alt="" />
-                    <h4 class="thumbnail-title">Bread</h4>
-                    <p>Handmade bread is our passion at San Valentino - we use only simple...</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="/img/Focaccia.png" alt="" />
-                    <h4 class="thumbnail-title">Focaccia</h4>
-                    <p>The only thing better than the aroma of fresh Altamura bread and...</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="/img/Dishes.png" alt="" />
-                    <h4 class="thumbnail-title">Dishes</h4>
-                    <p>San Valentino is also a place for friends and family to enjoy a three..</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="/img/Coffee.png" alt="" />
-                    <h4 class="thumbnail-title">Coffee</h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="/img/Philosophy.png" alt="" />
-                    <h4 class="thumbnail-title">Philosophy</h4>
-                    <p>Located in the heart of Haberfield, San Valentino is a new al fresco patis-</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <h2 class="menu-caption">The Gallery </h2>
-            <div class="divider"></div>
-        </div>
 
-        <h1>Gallery Session: substituir por imagens</h1>
-    </div>
-    <footer>
-        <div>
-            <h4>San Valentino</h4>
-            <p>199 Ramsay St.</p>
-            <p>Haberfield NSW 2045</p>
-            <p>Ph: 04 9799 9799</p>
-        </div>
-        <div>
-            <ul>
-                <li>Philosophy</li>
-                <li>Cake</li>
-                <li>Bread</li>
-                <li>Dishes</li>
-                <li>Contact</li>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Philosophy</a></li>
+                <li><a href="#">Cake</a></li>
+                <li><a href="#">Bread</a></li>
+                <li><a href="">Dishes</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
+    </nav>
+
+    <!-- Billboard -->
+    <div class="container">
+        <div class="center-block">
+            <img class="img-responsive" src="img/billboard.jpg" alt="San Valentino" />
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="container container-spaced-plus menu-session">
+
+        <div class="title text-center">MENU</div>
+        <div class="divider"></div>
+
+        <div class="navigator">
+            <ol class="carousel-indicators">
+                <li></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/cake.jpg" alt="Cake" class="menu-img img-responsive"/>
+                    <div class="menu-content">
+                        <h4 class="thumbnail-title">Cake</h4>
+                        <p>For those with a sweet tooth, San valentin has everything to satisfy your</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/semifreddo.png" alt="Semifreddo" class="menu-img img-responsive"/>
+                    <div class="menu-content">
+                        <h4 class="thumbnail-title">Semifreddo</h4>
+                        <p>Drop in and try our mouth watering ricotta cheese-cake, semifreddo, cannoli</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/Gelatto.png" alt="Gelatto" class="menu-img img-responsive"/>
+                    <div class="menu-content">
+                        <h4 class="thumbnail-title">Gelato</h4>
+                        <p>To cleanse your palette, try our range of delicious gelatto - on taste will</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/Bread.png" alt="Bread" class="menu-img img-responsive"/>
+                    <div class="menu-content">
+                        <h4 class="thumbnail-title">Bread</h4>
+                        <p>Handmade bread is our passion at San Valentino - we use only simple</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/Focaccia.png" alt="Bread" class="menu-img img-responsive"/>
+                    <div class="menu-content">
+                        <h4 class="thumbnail-title">Focaccia</h4>
+                        <p>The only thing better than the aroma of fresh Altamura bread and</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/Dishes.png" alt="Dishes" class="menu-img img-responsive"/>
+                    <div class="menu-content">
+                        <h4 class="thumbnail-title">Dishes</h4>
+                        <p>San Valentino is also a place for friends and family to enjoy a three</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/Coffee.png" alt="Coffee" class="menu-img img-responsive"/>
+                    <div class="menu-content">
+                        <h4 class="thumbnail-title">Coffee</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/Philosophy.png" alt="Philosophy" class="menu-img img-responsive"/>
+                    <div class="menu-content">
+                        <h4 class="thumbnail-title">Philosophy</h4>
+                        <p>Located in the heart of Haberfield, San Valentino is a new al fresco patis-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Session -->
+    <div class="container container-spaced-plus menu-session">
+        <div class="title title-gallery text-center">THE GALLERY</div>
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="container">
+        <div class="center-block">
+            <img class="img-responsive" src="img/gallery.jpg" alt="San Valentino" />
+        </div>
+    </div>
+
+    <footer>
+        <div class="container container-spaced-plus inner-foot">
+            <div class="address">
+                <h4>San Valentino</h4>
+                <p>199 Ramsay St.</p>
+                <p>Haberfield NSW 2045</p>
+                <br>
+                <p>Ph: 04 9799 9799</p>
+            </div>
+
+            <ul class="map">
+                <li><a href="#">Philosophy</a></li>
+                <li><a href="#">Cake</a></li>
+                <li><a href="#">Bread</a></li>
+                <li><a href="#">Dishes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <img src="img/logo-bottom.png" alt="San Valentino">
+        </div>
     </footer>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/npm.js"></script>
-    <script src="/js/jquery-1.11.2.min.js"></script>
 </body>
 </html>
