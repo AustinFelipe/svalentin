@@ -156,11 +156,12 @@ footer .map {
     margin-top: 10px;
 }
 
+footer .map a,
 footer .map a:visited,
 footer .map a:hover,
 footer .map a:active,
 footer .map a:focus {
-    color: #fff;
+    color: #fff !important;
 }
 
 footer .map li {
