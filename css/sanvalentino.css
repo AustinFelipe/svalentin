@@ -215,6 +215,10 @@ footer .address p {
     color: #fff;
 }
 
+footer .address a {
+    color: #fff;
+}
+
 footer img {
     float: right;
     margin-top: 80px;
