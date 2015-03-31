@@ -31,7 +31,7 @@
     <div class="container">
         <div id="billboard" class="center-block">
             <?php if (isset($billboard_image) && $billboard_image != '') {
-                echo '<img class="img-responsive" src="<?php echo $billboard_image?>" alt="San Valentino" />';
+                echo '<img class="img-responsive" src="'.$billboard_image.'" alt="San Valentino" />';
             }?>
         </div>
     </div>
