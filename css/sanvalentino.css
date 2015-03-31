@@ -1,24 +1,37 @@
+#navigator {
+    min-width: 1027px;
+    width: 1027px;
+    max-width: 1027px;
+    height: 478px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nav-item {
+    position: absolute;
+}
+
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
-  margin-right: 0;
-  margin-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .navbar-header {
-  float: left;
+    float: left;
 }
 
 .navbar-nav>li {
-  float: left;
+    float: left;
 }
 
 .navbar-nav {
-  float: left;
-  margin: 0;
+    float: left;
+    margin: 0;
 }
 
 .navbar-right {
-  float: right !important;
-  margin-right: -15px;
+    float: right !important;
+    margin-right: -15px;
 }
 
 .container {
