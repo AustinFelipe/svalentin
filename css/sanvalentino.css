@@ -223,3 +223,9 @@ footer img {
     float: right;
     margin-top: 80px;
 }
+
+.text-body {
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+}
