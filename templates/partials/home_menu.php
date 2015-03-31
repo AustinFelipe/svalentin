@@ -34,7 +34,7 @@
         </div>
         <div class="col-xs-3">
             <div class="thumbnail">
-                <img src="img/home/Gelatto.jpg" alt="Gelatto" class="menu-img img-responsive"/>
+                <img src="img/home/Gelato.jpg" alt="Gelatto" class="menu-img img-responsive"/>
                 <div class="menu-content">
                     <h4 class="thumbnail-title">Gelato</h4>
                     <p>To cleanse your palette, try our range of delicious gelatto - on taste will</p>
