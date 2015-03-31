@@ -19,5 +19,11 @@
         <img src="img/logo-bottom.png" alt="San Valentino">
     </div>
 </footer>
+
+    <?php
+        if (isset($scripts) && $scripts != '') {
+            echo '<script type="text/javascript" src="'.$scripts.'"></script>';    
+        }
+    ?>
 </body>
 </html>

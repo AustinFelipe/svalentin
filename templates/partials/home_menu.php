@@ -5,11 +5,11 @@
     <div class="divider"></div>
 
     <div class="navigator">
-        <ol class="carousel-indicators">
-            <li></li>
+        <ol id="navigator-rule" class="carousel-indicators">
+            <!-- <li></li>
             <li class="active"></li>
             <li></li>
-            <li></li>
+            <li></li> -->
         </ol>
     </div>
 
