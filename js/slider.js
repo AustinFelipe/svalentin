@@ -5,6 +5,7 @@
 
 var offSetValue = 1027;
 var initialized = false;
+var interval = 4000;
 var currentSlider = 0;
 var stopSlider;
 var navRule;
@@ -17,13 +18,18 @@ var changeSlide = function(slideId, oldId, changeCurrentSlider) {
 	var id = slideId;
 	var pos = -(id * offSetValue);
 
+	var restartService = function () {
+		if (!stopSlider)
+			stopSlider = setInterval(timerFunc, interval);
+	};
+
 	navRule.children[oldId].className = "";
     navRule.children[id].className = "active";
 
     if (changeCurrentSlider)
     	currentSlider = id;
     
-    Velocity(slider, { marginLeft: pos }, { duration: 800 });
+    Velocity(slider, { marginLeft: pos }, { duration: 800, complete: restartService });
 };
 
 var timerFunc = function() {
@@ -32,6 +38,9 @@ var timerFunc = function() {
 
     if (currentSlider >= imgArray.length)
         currentSlider = 0;
+
+    clearInterval(stopSlider);
+    stopSlider = undefined;
 
     changeSlide(currentSlider, old);
 };
@@ -42,10 +51,11 @@ var init = function() {
 		e.preventDefault();
 
 		clearInterval(stopSlider);
+		stopSlider = undefined;
 
 		changeSlide(e.target.getAttribute("data-slide"), currentSlider, true);
 
-		stopSlider = setInterval(timerFunc, 5000);
+		//stopSlider = setInterval(timerFunc, interval);
 	};
     var billboard = document.getElementById("billboard");
     // Import!
@@ -80,8 +90,8 @@ var init = function() {
 
     slider = document.getElementById("slider");
 
-    // set timer
-    stopSlider = setInterval(timerFunc, 5000);
+    // set interval
+    stopSlider = setInterval(timerFunc, interval);
     initialized = true;
 };
 
@@ -101,7 +111,7 @@ var resizeNavigator = function() {
     	itemsList[i].style.marginLeft = (i * offSetValue) + "px";
     };
 
-    stopSlider = setInterval(timerFunc, 5000);
+    stopSlider = setInterval(timerFunc, interval);
 };
 
 window.onload = init;
