@@ -24,6 +24,8 @@
         if (isset($scripts) && $scripts != '') {
             echo '<script type="text/javascript" src="'.$scripts.'"></script>';    
         }
+
     ?>
+    <script type="text/javascript" src="js/ultra.js"></script>
 </body>
 </html>

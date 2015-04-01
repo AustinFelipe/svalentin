@@ -4,6 +4,15 @@
     overflow-x: hidden;
 }
 
+.ultralb {
+    text-align: center;
+}
+
+.gallery-img {
+    display: inline-block;
+    cursor: pointer;
+}
+
 a.remove-decoration:hover {
     text-decoration: none;
 }
