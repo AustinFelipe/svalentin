@@ -13,22 +13,11 @@ ultralb = {
 		Array.prototype.forEach.call(galeries, function(galery, idx){
 			var elements = galery.querySelectorAll('img');
 			Array.prototype.forEach.call(elements, function(el, i){
-				// /console.log("teste", el.attributes);
-				var jump = false;
 
-				Array.prototype.forEach.call(el.attributes, function(attr, id) {
-					if (attr.name == "no-show") {
-						jump = true;
-					}
-				});
-
-				if (!jump) {
-					console.log("Loading image...");
-					if (el.addEventListener)
-						el.addEventListener('click', function(){ _this.onImgClick(elements, i); });
-					else
-						el.attachEvent('onclick', function(){ _this.onImgClick(elements, i); });
-				}
+				if (el.addEventListener)
+					el.addEventListener('click', function(){ _this.onImgClick(elements, i); });
+				else
+					el.attachEvent('onclick', function(){ _this.onImgClick(elements, i); });
 				
 			});
 		});
@@ -230,3 +219,13 @@ else
 	document.attachEvent('onreadystatechange', function () {
 		if (document.readyState === 'complete') ultralb.init();
 	});
+
+
+
+// var jump = false;
+
+// 				Array.prototype.forEach.call(el.attributes, function(attr, id) {
+// 					if (attr.name == "no-show") {
+// 						jump = true;
+// 					}
+// 				});
