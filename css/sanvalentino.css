@@ -4,8 +4,16 @@
     overflow-x: hidden;
 }
 
+a.remove-decoration:hover {
+    text-decoration: none;
+}
+
 .nav-item {
     position: absolute;
+}
+
+.extra-bottom-margin {
+    margin-bottom: 170px;
 }
 
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
@@ -72,6 +80,11 @@ body {
 
 .menu-session {
     margin-top: 75px;
+}
+
+.menu-session .thumbnail:hover {
+    border: 1px solid #ddd;
+    /*cursor: pointer;*/
 }
 
 .menu-session .title {
@@ -146,7 +159,7 @@ body {
 }
 
 .thumbnail {
-    border: none;
+    border: 1px solid #fff;
 }
 
 .menu-img {

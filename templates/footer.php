@@ -13,7 +13,7 @@
             <li><a href="cake">Cake</a></li>
             <li><a href="bread">Bread</a></li>
             <li><a href="dishes">Dishes</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="contact">Contact Us</a></li>
         </ul>
 
         <img src="img/logo-bottom.png" alt="San Valentino">
