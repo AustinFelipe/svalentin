@@ -61,9 +61,9 @@
     </div>
     <div class="row">
         <div class="col-xs-3">
-            <a href="dishes" class="remove-decoration">
+            <a href="bread" class="remove-decoration">
                 <div class="thumbnail">
-                    <img src="img/home/Focaccia.jpg" alt="Bread" class="menu-img img-responsive"/>
+                    <img src="img/home/Focaccia.jpg" alt="Focaccia" class="menu-img img-responsive"/>
                     <div class="menu-content">
                         <h4 class="thumbnail-title">Focaccia</h4>
                         <p>The only thing better than the aroma of fresh Altamura bread and</p>
@@ -88,7 +88,9 @@
                     <img src="img/home/Coffee.jpg" alt="Coffee" class="menu-img img-responsive"/>
                     <div class="menu-content">
                         <h4 class="thumbnail-title">Coffee</h4>
-                        <p>Located in the heart of Haberfield, San Valentino is a new al fresco patis-</p>
+                        <p>The organic coffee is delivered straight
+from Italy, made into all the kinds Australians love – flat whites,
+espressos, cappuccinos and more</p>
                     </div>
                 </div>
             </a>
@@ -99,7 +101,7 @@
                     <img src="img/home/Philosophy.jpg" alt="Philosophy" class="menu-img img-responsive"/>
                     <div class="menu-content">
                         <h4 class="thumbnail-title">Philosophy</h4>
-                        <p>Located in the heart of Haberfield, San Valentino is a new al fresco patis-</p>
+                        <p>Located in the heart of Haberfield, San Valentino is a new al fresco patis</p>
                     </div>
                 </div>
             </a>
