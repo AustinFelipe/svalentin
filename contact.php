@@ -1,6 +1,6 @@
 <?php
     $page_title = 'Contact Us';
-    $billboard_image = 'img/header_pages/philosophy.jpg';
+    $billboard_image = 'img/header_pages/ContactUs.jpg';
     $page_canonical = 'contact';
     $page_header = 'CONTACT US';
     $page_content = '<strong>San Valentino<br>Pasticceria Focacceria Panificio</strong><br><br>'.
