@@ -9,10 +9,10 @@ var interval = 4000;
 var currentSlider = 0;
 var stopSlider;
 var navRule;
-var imgArray = ["img/home/billboard/Coffee.jpg",
-                "img/home/billboard/Focaccia.jpg",
-                "img/home/billboard/Gelato.jpg",
-                "img/home/billboard/Semifreddo.jpg"];
+var imgArray = ["img/home/billboard/1cake.jpg",
+                "img/home/billboard/2focaccia.jpg",
+                "img/home/billboard/3Coffee.jpg",
+                "img/home/billboard/4cake.jpg"];
 
 var changeSlide = function(slideId, oldId, changeCurrentSlider) {
 	var id = slideId;
@@ -28,7 +28,7 @@ var changeSlide = function(slideId, oldId, changeCurrentSlider) {
 
     if (changeCurrentSlider)
     	currentSlider = id;
-    
+
     Velocity(slider, { marginLeft: pos }, { duration: 800, complete: restartService });
 };
 
@@ -60,7 +60,7 @@ var init = function() {
     var billboard = document.getElementById("billboard");
     // Import!
     offSetValue = billboard.offsetWidth;
-    
+
     var inner = "";
     var innerNavRule = "";
     var leftMargin = 0;
@@ -85,7 +85,7 @@ var init = function() {
     for (var i = itemsList.length - 1; i >= 0; i--) {
     	itemsList[i].onclick = onClickItem;
     };
-    
+
     billboard.innerHTML = '<div id="navigator" style="width: ' + offSetValue + 'px;"><div id="slider">' + inner + '</div></div>';
 
     slider = document.getElementById("slider");
