@@ -18,7 +18,7 @@ ultralb = {
 					el.addEventListener('click', function(){ _this.onImgClick(elements, i); });
 				else
 					el.attachEvent('onclick', function(){ _this.onImgClick(elements, i); });
-				
+
 			});
 		});
 	},
@@ -33,7 +33,7 @@ ultralb = {
 		var title = this.allImages[this.currentIndex].getAttribute('alt');
 		var imgUrl = this.allImages[this.currentIndex].getAttribute('data-image');
 		if (!imgUrl || imgUrl == '')
-			imgUrl = this.allImages[this.currentIndex].getAttribute('src');
+			imgUrl = this.allImages[this.currentIndex].getAttribute('data-big');
 
 		img.onload = function() {
 			var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -95,7 +95,7 @@ ultralb = {
 		this.nextButton = this.container.querySelector('.ultralb-next');
 		this.prevButton = this.container.querySelector('.ultralb-prev');
 	},
-	
+
 	addCss: function() {
 		var css = '\
 .ultralb-fill{\
@@ -203,7 +203,7 @@ ultralb = {
 		if (style.styleSheet) style.styleSheet.cssText = css;
 		else style.innerHTML = css;
 		document.getElementsByTagName("head")[0].appendChild(style);
-	}	
+	}
 };
 
 if (typeof Array.prototype.forEach != 'function') {
